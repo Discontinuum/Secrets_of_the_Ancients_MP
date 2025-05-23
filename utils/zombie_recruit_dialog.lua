@@ -11,7 +11,7 @@ local recruitCost
 local zombies = wml.array_access.get("zombies")
 local sides = wesnoth.sides.find{}
 
-local zombie_recruit_dialog = wml.load "add-ons/Secrets_of_the_Ancients_MP/gui/zombie_recruit_dialog.cfg"
+local zombie_recruit_dialog = wml.load "~add-ons/Secrets_of_the_Ancients_MP/gui/zombie_recruit_dialog.cfg"
 
 local function preshow(dialog)
 
