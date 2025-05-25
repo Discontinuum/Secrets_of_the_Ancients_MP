@@ -92,7 +92,7 @@ else
         if res == -2 then
             return {recruitCost = 0, recruitedType = "cancel"}
         end
-        if sides[1].gold  < recruitCost then
+        if sides[wml.variables["side_number"]].gold  < recruitCost then
             gui.show_prompt("", _ "You do not have enough gold to recruit that unit", "")
             return {recruitCost = 0, recruitedType = "cancel"}
         end
