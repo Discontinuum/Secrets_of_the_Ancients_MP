@@ -40,7 +40,7 @@ local function preshow(dialog)
             local unit_type = wesnoth.unit_types[z.type]
             local afford_color_span_start = ""
             local afford_color_span_end = ""
-            if sides[1].gold < unit_type.cost then
+            if sides[wml.variables["side_number"]].gold < unit_type.cost then
                 afford_color_span_start = "<span color='red'>"
                 afford_color_span_end = "</span>"
             end
